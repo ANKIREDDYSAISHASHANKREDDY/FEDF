@@ -172,8 +172,9 @@ body {
 .name {
   color: #fff;
   font-size: 1rem;
+  margin-top: 10px;
   margin-bottom: 0;
-  margin-top: 90px;
+  margin-top: 90;
   letter-spacing: 1px;
   opacity: 0;
   transition: transform 0.01s ease, color 0.9s ease;
