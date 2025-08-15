@@ -4,12 +4,15 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .tsp h1 {
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+  z-index: 10;
   color: white;
   font-size: 3rem;
   letter-spacing: 2px;
@@ -27,6 +30,8 @@ body {
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 .profile {
@@ -59,30 +64,31 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 3000px;
-  height: 90%;
+  height: 140%;
   transition: all 0.5s ease;
 }
 
 .img-wrapper {
-  max-width: 1800px;
-  max-height: 1000px;
+  width: 1790px;
+  height: 370pt;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
   text-align: center;
-  padding: 10pt 1px 1pc 1pc;
+  padding: 0 0 0 0;
   box-sizing: border-box;
 }
 
 .img-wrapper img {
   max-width: 350px;
   height: 90%;
+  max-height: 1000px;
   object-fit: cover;
   object-position: center;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 10px 0 10px;
   box-sizing: border-box;
   transition: border-radius 0.5s, filter 0.5s, margin 1s cubic-bezier(0.4,0,0.2,1);
   opacity: 1;
@@ -105,7 +111,7 @@ body {
   background: transparent;
   z-index: 3;
   width: 0;
-  height: 100%;
+  height: 70%;
 }
 
 .profile:hover .basic {
@@ -151,9 +157,17 @@ body {
   color: #fff;
   font-size: 1rem;
   margin-top: 10px;
+  margin-bottom: 0;
+  margin-top: 90;
   letter-spacing: 1px;
   opacity: 0;
   transition: opacity 0.5s;
+}
+.name:hover {
+  cursor: context-menu;
+  color: #00aaff;
+  transform: scale(1.05);
+  transition: color 0.3s, transform 0.3s;
 }
 
 .profile:hover .name {
